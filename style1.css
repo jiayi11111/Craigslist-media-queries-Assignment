@@ -1,0 +1,167 @@
+
+
+body{
+    background-color:#1f542d ;
+}
+
+
+h1{
+    position: absolute;
+    left:5%;
+    top: 10%;
+    font-size: 40px;
+    color: white;
+}
+
+.search{
+   
+    position: absolute;
+    left:10%;
+    top: 25%;
+
+
+}
+
+.search input[type=text] {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: 2px soild gray ;
+    font-size: 27px;
+    width:1050px;
+  }
+
+  .container{
+    margin-top: 300px;
+    margin-left: 60px;
+    margin-right: 60px;
+  
+     height:600px; 
+    display: flex;
+    /* flex-direction: column; */
+    background-color: rgb(203, 223, 223);
+    justify-content: space-around;
+    align-items: center;
+   
+    
+  }
+   .item1{
+  
+    width:200px;
+    height:200px;
+    background: bisque;
+
+  }
+
+
+  @media only screen  and (max-width:1000px){
+   body{
+    background-color: aquamarine;
+   }
+   .search{
+    width: 500px;
+     position: absolute;
+     left:25%;
+     top: 20%;
+    }
+ 
+
+   .search input[type=text]{
+    width:400px;
+    font-size: 25px;
+   }
+   .container{
+    flex-wrap: wrap;
+    gap: 12px;
+   }
+   h1{
+    font-size: 30px;
+   }
+  }
+  /* .item2{
+    width:200px;
+    height:200px;
+    background-color: bisque;
+
+  }
+  .item3{
+    width:200px;
+    height:200px;
+    background-color: bisque;
+
+  }  */
+
+
+  @media only screen  and( min-width:450px),(max-width:800px){
+
+    body{
+      background-color: rgb(83, 87, 213);
+     }
+
+     h1{
+       font-size: 30px;
+       position: absolute;
+       top:5%;
+     }
+     .search{
+     width: 300px;
+      position: absolute;
+      left:5%;
+      top: 10%;
+     }
+  
+  
+     .search input[type=text]{
+       position: absolute;
+      left:5%;
+      top: 10%;;
+      width:300px;
+      font-size: 15px;
+     }
+     .container{
+      display: flex;
+      width:400px;
+      height:900px;
+      flex-direction: column;
+
+      /* flex-wrap: wrap; */
+      gap: 12px;
+     }
+     h1{
+      font-size: 25px;
+     }
+    }
+  
+  
+
+    @media only screen  and (max-width:400px){
+      body{
+        background-color: rgb(204, 159, 13);
+       }
+       .search{
+       
+       width: 200px;
+        position: absolute;
+        left:10%;
+        top: 20%;
+       }
+    
+    
+       .search input[type=text]{
+        width:200px;
+        font-size: 15px;
+       }
+       .container{
+        position: absolute;
+        left:1%;
+        width:250px;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        gap: 12px;
+       }
+       h1{
+        font-size: 25px;
+       }
+      }
+    

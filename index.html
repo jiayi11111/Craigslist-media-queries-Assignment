@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <title>Craigslist</title>
+</head>
+<body>
+    <div id="website">
+   <div class="logo">
+    <img src="img/logo.jpg" alt="logo" >
+</div>
+
+<div class="location">
+    <i class="material-icons" style="font-size:38px;color:rgb(0, 0, 0)">edit_location</i>
+</div>
+
+<div class="search">
+    <input type="text" placeholder="Search..">
+</div>
+
+<div class="buttonbar">
+    <button type="button" class="services" onmousemove="myFunction1()">Services</button>
+    <a href="services.html" target="_blank"><button type="button" class="services" onmousemove="myFunction1()">Services</button></a> 
+    <a href="community.html" target="_blank"><button type="button" class="community" onmousemove="myFunction2()">Community</button></a>
+    <a href="housing.html" target="_blank"> <button type="button" class="Housing" onmousemove="myFunction3()">Housing</button></a>
+        <a href="jobs.html" target="_blank"> <button type="button" class="jobs" onmousemove="myFunction4()">Jobs</button></a>
+        <a href="dis.html" target="_blank"> <button type="button" class="discussion" onmousemove="myFunction5()">Discussion Forums</button></a>
+
+</div>
+
+<div class="foot">
+    <p class="r">Resource</p>
+    <p class="a">About Us</p>
+    <p class="t">Terms</p>
+</div>
+</div>
+
+<script>
+     function myFunction1() {
+       document.getElementById("website").style.backgroundImage = "url(img/services.jpg)";
+    }
+    function myFunction2() {
+       document.getElementById("website").style.backgroundImage = "url(img/community.jpg)";
+
+    }
+
+    function myFunction3() {
+       document.getElementById("website").style.backgroundImage = "url(img/house.jpg)";
+    }
+    function myFunction4() {
+       document.getElementById("website").style.backgroundImage = "url(img/job.jpg)";
+    }
+
+    function myFunction5() {
+       document.getElementById("website").style.backgroundImage = "url(img/communication.jpg)";
+    }
+    </script> 
+    
+    
+</body>
+</html>
